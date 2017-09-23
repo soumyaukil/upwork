@@ -1,0 +1,2 @@
+/usr/bin/ar cr libOrderServer.a  CMakeFiles/OrderServer.dir/src/OrderServ.cpp.o CMakeFiles/OrderServer.dir/src/OrderConfig.cpp.o CMakeFiles/OrderServer.dir/src/ClientPortDaemon.cpp.o
+/usr/bin/ranlib libOrderServer.a

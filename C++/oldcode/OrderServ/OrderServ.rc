@@ -1,0 +1,735 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OrderServ.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\OrderServ.ico"
+IDR_OrderRoute          ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Configure File",              ID_VIEW_CFG
+        MENUITEM "Login Log",                   ID_VIEW_LOGINLOG
+        MENUITEM "Trade Log",                   ID_VIEW_LOG
+        MENUITEM "Traders",                     ID_VIEW_TRADERS
+        MENUITEM SEPARATOR
+        MENUITEM "Threads",                     ID_VIEW_THREADS
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "AAA", GRAYED
+    BEGIN
+        MENUITEM "Account",                     ID_AAA_ACCOUNT
+        MENUITEM SEPARATOR
+        MENUITEM "acct_access",                 ID_AAA_TMP1
+        MENUITEM "Position",                    ID_AAA_POSITION
+        MENUITEM "OnLineTrader",                ID_AAA_ONLINETRADER
+        MENUITEM "Deal",                        ID_AAA_DEAL
+        MENUITEM SEPARATOR
+        MENUITEM "Trades",                      ID_AAA_TRADES
+        MENUITEM "Orders",                      ID_AAA_ORDERS
+        MENUITEM "Ticket",                      ID_AAA_TICKET
+        MENUITEM SEPARATOR
+        MENUITEM "test",                        ID_AAA_TEST
+        POPUP "old"
+        BEGIN
+            POPUP "Load"
+            BEGIN
+                MENUITEM "LoadEquity",                  ID_DATA_LOADEQUITY
+                MENUITEM "Load Short List",             ID_DATA_LSHTLST
+            END
+            POPUP "&View"
+            BEGIN
+                MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+                MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+            END
+            MENUITEM "Export Position",             ID_DATA_EXPORTPOSITION
+        END
+    END
+    POPUP "Data"
+    BEGIN
+        POPUP "SOD"
+        BEGIN
+            MENUITEM "Quest",                       ID_DATA_SOD_QUEST
+            MENUITEM "BP_EQUITY",                   ID_DATA_SOD_BPEQUITY
+            MENUITEM SEPARATOR
+            MENUITEM "Short List",                  ID_DATA_SOD_SHORTLIST
+            MENUITEM "UnShortList",                 ID_DATA_SOD_UNSHORTLIST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "SaveEquity",                  ID_DATA_SAVEEQUITY
+        MENUITEM SEPARATOR
+        MENUITEM "Counting",                    ID_DATA_COUNTING
+        MENUITEM "SaveData",                    ID_DATA_SAVEDATA
+        POPUP "Recover"
+        BEGIN
+            MENUITEM "SaveTrades",                  ID_DATA_RECOVER_SAVETRADES
+
+        END
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "SecIfo",                      ID_TOOLS_SECIFO
+        MENUITEM "Equity",                      ID_TOOLS_EQUITY
+        MENUITEM SEPARATOR
+        MENUITEM "Balance",                     ID_TOOLS_BALANCE
+        MENUITEM "Load LoginCtrl",              ID_TOOLS_LOADLOGINCTRL
+        MENUITEM "Load MM Untradeable List",    ID_TOOLS_LOADMMUNTRADEABLE
+        MENUITEM "Load Route Ctrl",             ID_TOOLS_LOADROUTECTRL
+        MENUITEM SEPARATOR
+        MENUITEM "Command",                     ID_TOOLS_COMMAND
+        MENUITEM "Script List",                 ID_TOOLS_SCRIPTLIST
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icon",               ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OrderServ...",         ID_APP_ABOUT
+    END
+END
+
+IDR_MenuPopUp MENU DISCARDABLE 
+BEGIN
+    POPUP "Route"
+    BEGIN
+        MENUITEM "Connect",                     ID_ROUTE_CONNECT
+        MENUITEM "Disconnect",                  ID_ROUTE_DISCONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "Config",                      ID_ROUTE_CONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Connect All",                 ID_ROUTE_CONNECTALL
+        MENUITEM "Disconnect All",              ID_ROUTE_DISCONNECTALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 188, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Order Server"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,10,20,20
+    LTEXT           "OrderServ Version ",IDC_STATIC,40,10,60,8,SS_NOPREFIX
+    LTEXT           "",IDC_STATIC,12,37,8,8
+    DEFPUSHBUTTON   "OK",IDOK,131,104,50,14,WS_GROUP
+    LTEXT           "",IDC_STVER,39,20,33,10,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STIFO,10,70,158,15,SS_NOTIFY,WS_EX_STATICEDGE
+    PUSHBUTTON      "Test Crash",IDC_BCrash,7,104,39,14
+    PUSHBUTTON      "Perf",IDC_BPref,56,105,37,13
+END
+
+IDD_SECIFO DIALOGEX 0, 0, 241, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STGRID,5,5,105,190,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Load Pensen Short List",IDC_BLoadShortLst,125,127,110,
+                    13
+    EDITTEXT        IDC_EDSECSYM,150,10,45,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Shortable",IDC_CHKSHORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,25,46,10
+    LTEXT           "secsym",IDC_STATIC,120,10,24,8
+    CONTROL         "Marginable",IDC_CHKMARG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,175,25,51,10
+    COMBOBOX        IDC_COMBMKT,215,10,23,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "MKT",IDC_STATIC,198,11,16,8
+    CONTROL         "50% maintance ,internet stocks",IDC_CHKHIRISK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,38,114,10
+    LTEXT           "shortsize",IDC_STATIC,126,51,28,8
+    EDITTEXT        IDC_EDSHORTSIZE,165,50,45,12,ES_AUTOHSCROLL
+    LTEXT           "SOES tire",IDC_STATIC,125,65,32,8
+    EDITTEXT        IDC_EDSOESTIRE,165,63,46,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Change",IDC_BChange,185,95,30,13
+    PUSHBUTTON      "Delete",IDC_BDEL,125,95,30,13
+    GROUPBOX        "modify",IDC_STATIC,115,1,125,160
+    PUSHBUTTON      "Clear",IDC_BClear,185,80,30,13
+    PUSHBUTTON      "Commit Change",IDC_BComitChange,183,179,58,15
+    PUSHBUTTON      "UnDel",IDC_BUndel,155,95,30,13
+    PUSHBUTTON      "Find",IDC_BFind,125,80,30,13
+    PUSHBUTTON      "Sort",IDC_BSort,155,80,30,13
+    CONTROL         "Progress1",IDC_PROGCOMIT,"msctls_progress32",PBS_SMOOTH | 
+                    NOT WS_VISIBLE,115,166,125,10,WS_EX_STATICEDGE
+    PUSHBUTTON      "Load Pensen Unshortable List",IDC_BLoadUnShortLst,125,
+                    141,110,13
+    PUSHBUTTON      "Remove All Info",IDC_BRemoveAll,125,114,110,13
+END
+
+IDD_EQUITY DIALOGEX 0, 0, 260, 186
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STGRID,6,5,105,175,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Load BP",IDC_BLoadBuypower,157,104,32,12
+    PUSHBUTTON      "Change",IDC_BChange,182,87,30,13
+    GROUPBOX        "modify",IDC_STATIC,115,4,130,132
+    PUSHBUTTON      "Commit Change",IDC_BComitChange,188,156,58,15
+    PUSHBUTTON      "Find",IDC_BFind,122,87,30,13
+    PUSHBUTTON      "Sort",IDC_BSort,152,87,30,13
+    CONTROL         "Progress1",IDC_PROGCOMIT,"msctls_progress32",PBS_SMOOTH | 
+                    NOT WS_VISIBLE,115,143,125,10,WS_EX_STATICEDGE
+    LTEXT           "Account",IDC_STATIC,122,14,30,10
+    LTEXT           "Day BP",IDC_STATIC,121,59,25,8
+    LTEXT           "Overnight BP",IDC_STATIC,121,73,43,8
+    LTEXT           "TotalEquity",IDC_STATIC,121,29,36,8
+    LTEXT           "Marg Equity",IDC_STATIC,120,42,38,8
+    EDITTEXT        IDC_DBP,173,58,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NBP,173,71,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EQ,173,28,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MEQ,173,41,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACC,173,13,51,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load EQ",IDC_BLoadEquity,191,104,33,12
+    LTEXT           "Penson:",IDC_STATIC,127,106,27,8
+    LTEXT           "CCS:",IDC_STATIC,127,120,25,8
+    PUSHBUTTON      "Load Balance",IDC_BLoadCCSBalance,157,119,67,12
+END
+
+IDD_TRADERS DIALOGEX 0, 0, 307, 137
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STGRID,5,5,145,125,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Refresh",IDC_BRefresh,155,5,40,12
+    PUSHBUTTON      "KickOut",IDC_BKickOut,265,110,40,13
+    PUSHBUTTON      "SortAsc",IDC_BSortAsc,155,20,40,12
+    PUSHBUTTON      "SortDec",IDC_BSortDec,195,20,40,12
+    PUSHBUTTON      "Count",IDC_BCount,195,5,40,12
+    EDITTEXT        IDC_EDLOGOUTMSG,155,35,150,70,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Block",IDC_BBlock,191,109,62,13
+END
+
+IDD_DIGIPINPUT DIALOG DISCARDABLE  0, 0, 142, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,65,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,65,40,14
+    LTEXT           "IP ",IDC_STATIC,23,24,10,10
+    EDITTEXT        IDC_EDIP,20,35,60,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,85,25,14,8
+    EDITTEXT        IDC_EDPORT,85,35,36,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DLGBALANCE DIALOG DISCARDABLE  0, 0, 259, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Balance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,202,81,50,14
+    LTEXT           "First QuoteSever",IDC_STATIC,7,25,54,8
+    LTEXT           "2nd QuoteServer",IDC_STATIC,7,41,55,8
+    EDITTEXT        IDC_EDPORT1,155,25,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDPORT2,155,41,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,75,245,1
+    PUSHBUTTON      "Refresh",IDC_BRefresh,207,25,30,30
+    EDITTEXT        IDC_EDIP1,67,25,76,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIP2,67,41,76,14,ES_AUTOHSCROLL
+    LTEXT           "IP",IDC_STATIC,74,14,41,8
+    LTEXT           "Port",IDC_STATIC,166,14,14,8
+END
+
+IDD_ROUTECFG DIALOGEX 0, 0, 299, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Order route Configure"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,119,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,165,50,14
+    LTEXT           "IP Address",IDC_STATIC,35,42,35,8
+    EDITTEXT        IDC_EDIP,80,40,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDPORT,79,57,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "User ID",IDC_STATIC,35,79,25,8
+    EDITTEXT        IDC_EDUID,80,77,48,12,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,35,98,32,8
+    EDITTEXT        IDC_EDPWD,80,96,47,12,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STRoute,65,14,139,18,0,WS_EX_STATICEDGE
+    LTEXT           "Port",IDC_STATIC,39,60,14,8
+    LTEXT           "Start Route",IDC_STATIC,177,46,37,8
+    EDITTEXT        IDC_EDSTART,221,43,50,14,ES_AUTOHSCROLL
+    LTEXT           "Disconnect Route",IDC_STATIC,160,65,58,8
+    EDITTEXT        IDC_EDSTOP,222,64,49,12,ES_AUTOHSCROLL
+    CONTROL         "AutoConnect",IDC_CAutoConnect,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,223,85,57,10
+    CONTROL         "CxlReplace",IDC_CHKCancelReplace,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,223,101,53,8
+    LTEXT           "Disabled Exchange",IDC_STATIC,16,127,62,8
+    EDITTEXT        IDC_EDEXCHFILTER,82,126,76,12,ES_AUTOHSCROLL
+    CONTROL         "Hide",IDC_CHKHide,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    223,116,53,8
+    CONTROL         "Disable \nCustomer order",IDC_CHKDisableCustomerOrder,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,223,
+                    128,64,21
+END
+
+IDD_DLGMSG DIALOGEX 0, 0, 204, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,146,88,50,14
+    EDITTEXT        IDC_EDMSG,43,10,153,72,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    ICON            "",IDC_STICON,12,25,21,20
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,89,0,2
+ PRODUCTVERSION 1,89,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "OrderManager\0"
+            VALUE "FileVersion", "1, 90, 0, 2\0"
+            VALUE "InternalName", "OrderManager\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "OM.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "OrderManager Application\0"
+            VALUE "ProductVersion", "1, 89, 0, 2\0"
+            VALUE "SpecialBuild", "04-07\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_SECIFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_TRADERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIGIPINPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DLGBALANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_ROUTECFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SECIFO DLGINIT
+BEGIN
+    IDC_COMBMKT, 0x403, 2, 0
+0x004e, 
+    IDC_COMBMKT, 0x403, 2, 0
+0x0041, 
+    IDC_COMBMKT, 0x403, 2, 0
+0x0051, 
+    IDC_COMBMKT, 0x403, 2, 0
+0x0053, 
+    IDC_COMBMKT, 0x403, 2, 0
+0x0055, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_VIEW_CFG
+    SEPARATOR
+    BUTTON      ID_ROUTE_CONFIG
+    SEPARATOR
+    BUTTON      ID_LogFile
+    SEPARATOR
+    BUTTON      ID_TOOLS_DBRECONN
+    SEPARATOR
+    BUTTON      ID_TOOLS_COMMAND
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "OrderServ"
+    IDR_LOG                 "\nLog\nLog"
+    IDR_SECIFO              "\nSECIFO\nSECIFO"
+    IDR_EQUITY              "\nEquity\nEquity"
+    IDR_TRADERS             "\nTraders\nTraders"
+    IDR_LOGINLOG            "\nLogin Log\nLoginLog"
+    IDR_OrderRoute          "\nOrder Route\nOrder Route"
+    IDR_SCRIPT              "\nScript List\nScript List"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OrderServ"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ORDERROUTE_ISLD      "Island OUCH."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DATA_LOADINITEQUITY  "Load the equity file and buying powerfile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ORDERROUTE_NITE      "NITE"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ORDERROUTE_CONFIG    "Rout Monitor"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_COMMAND        "Command script"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OrderServ.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

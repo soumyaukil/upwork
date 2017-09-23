@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Functions/FixLenMem.h
+thread
+-
+atomic
+-
+
+../Functions/PkgBuff.h
+FixLenMem.h
+../Functions/FixLenMem.h
+mutex
+-
+
+/opt/newcode/mintdev/Comm/Main.cpp
+Functions/PkgBuff.h
+-
+Functions/FixLenMem.h
+-
+

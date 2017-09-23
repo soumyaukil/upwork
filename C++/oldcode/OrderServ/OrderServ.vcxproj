@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{6156E8E4-078C-435D-A909-7F2880A5E9A2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <AdditionalIncludeDirectories>..\..\Comm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\exe\OrderServ.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>nafxcwd.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\Comm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\exe\OrderServ.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>nafxcw.lib;dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Comm\Crash\ExceptionHandler.cpp" />
+    <ClCompile Include="..\..\Comm\Crash\GetWinVer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Crash\MiniVersion.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\CCmdScript.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\Config.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\ControlPos.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\CPUIfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\encrypt.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\FixLenMem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\InputBox.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\intmap.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\MDVersion.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\Perf.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\PkgBuff.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\strfuncs.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\synchronal.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCell.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCellBase.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCtrl.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridDropTarget.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\InPlaceEdit.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\TitleTip.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Log\Log.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Log\logframe.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\MSocket\MSocket.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Security\md5.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\SRecSet\SRecSet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Account.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ClientPortDaemon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dlgBalance.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dlgIPBox.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dlgPopMsg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="frmOrderRoute.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="frmScript.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="InfoPort.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="IssueIfo.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Mgmt\frmmgmt.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="Mgmt\ItemPool.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Mgmt\itemsDef.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Mgmt\itemsSRst.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderConfig.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderDB.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderRouteCfg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderRouter.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderServ.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderServDoc.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderServView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrdScript.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TradeEngine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D   /D </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OrderServ.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Comm\Crash\ExceptionHandler.h" />
+    <ClInclude Include="..\..\Comm\defines\PkgIDDef.h" />
+    <ClInclude Include="..\..\Comm\Functions\CCmdScript.h" />
+    <ClInclude Include="..\..\Comm\Functions\Config.h" />
+    <ClInclude Include="..\..\Comm\Functions\ControlPos.h" />
+    <ClInclude Include="..\..\Comm\Functions\CPUIfo.h" />
+    <ClInclude Include="..\..\Comm\Functions\encrypt.h" />
+    <ClInclude Include="..\..\Comm\Functions\FixLenMem.h" />
+    <ClInclude Include="..\..\Comm\Functions\InputBox.h" />
+    <ClInclude Include="..\..\Comm\Functions\intmap.h" />
+    <ClInclude Include="..\..\Comm\Functions\MDVersion.h" />
+    <ClInclude Include="..\..\Comm\Functions\Perf.h" />
+    <ClInclude Include="..\..\Comm\Functions\PkgBuff.h" />
+    <ClInclude Include="..\..\Comm\Functions\strfuncs.h" />
+    <ClInclude Include="..\..\Comm\Functions\synchronal.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\CellRange.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\GridCell.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\GridCellBase.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\GridCtrl.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\GridDropTarget.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\InPlaceEdit.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\MemDC.h" />
+    <ClInclude Include="..\..\Comm\gridctrl\TitleTip.h" />
+    <ClInclude Include="..\..\Comm\Log\Log.h" />
+    <ClInclude Include="..\..\Comm\Log\logframe.h" />
+    <ClInclude Include="..\..\Comm\MSocket\Msocket.h" />
+    <ClInclude Include="..\..\Comm\Security\md5.h" />
+    <ClInclude Include="..\..\Comm\SRecSet\SRecSet.h" />
+    <ClInclude Include="..\Define\OrderDef.h" />
+    <ClInclude Include="..\Define\UDPPkgs.h" />
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="ClientPortDaemon.h" />
+    <ClInclude Include="dlgBalance.h" />
+    <ClInclude Include="dlgIPBox.h" />
+    <ClInclude Include="dlgPopMsg.h" />
+    <ClInclude Include="frmOrderRoute.h" />
+    <ClInclude Include="frmScript.h" />
+    <ClInclude Include="InfoPort.h" />
+    <ClInclude Include="IssueIfo.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Mgmt\frmmgmt.h" />
+    <ClInclude Include="Mgmt\ItemPool.h" />
+    <ClInclude Include="Mgmt\itemsDef.h" />
+    <ClInclude Include="Mgmt\itemsSRst.h" />
+    <ClInclude Include="OrderConfig.h" />
+    <ClInclude Include="OrderDB.h" />
+    <ClInclude Include="OrderRouteCfg.h" />
+    <ClInclude Include="OrderRouter.h" />
+    <ClInclude Include="OrderServ.h" />
+    <ClInclude Include="OrderServDoc.h" />
+    <ClInclude Include="OrderServView.h" />
+    <ClInclude Include="OrdScript.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TradeEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\OrderServ.ico" />
+    <Image Include="res\OrderServDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="AertTab1.sql" />
+    <CustomBuild Include="OrderServ.cfg" />
+    <CustomBuild Include="res\OrderServ.rc2" />
+    <CustomBuild Include="SQLScript\Init.sql" />
+    <CustomBuild Include="SQLScript\InitDataBase.sql" />
+    <CustomBuild Include="SQLScript\StoredProc.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

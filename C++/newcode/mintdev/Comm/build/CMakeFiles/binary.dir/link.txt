@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11     CMakeFiles/binary.dir/Main.cpp.o  -o binary -rdynamic libSharedLib.a 

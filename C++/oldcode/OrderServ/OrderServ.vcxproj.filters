@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{13528fcb-71f2-4c5f-b1e1-7049f5c6861b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7916b3c2-4b76-4ab4-9818-c7d9ee6e9795}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{54b7397b-a5ef-49a3-9cfb-10dd6d1a67ec}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{f9e70111-dd8a-47be-b86f-0db7c48c3808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\GridCtrl">
+      <UniqueIdentifier>{777c6a5d-b3ee-4e2a-b9e3-2f3ef522872b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MISC">
+      <UniqueIdentifier>{f54a8557-c2aa-4f47-bd34-927fc7ab9ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Crash">
+      <UniqueIdentifier>{878a9f2e-2d81-4bf4-b7ca-ef23e855773b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{92b9e539-ba69-4e40-a628-0e81b10e8e96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientPortDaemon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgPopMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\FixLenMem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgmt\frmmgmt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frmOrderRoute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frmScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\intmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IssueIfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgmt\ItemPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgmt\itemsDef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgmt\itemsSRst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\MDVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\MSocket\MSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderRouteCfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderRouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderServ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderServDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderServView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrdScript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\PkgBuff.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCell.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCellBase.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridCtrl.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\GridDropTarget.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\InPlaceEdit.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\gridctrl\TitleTip.cpp">
+      <Filter>Common\GridCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\ControlPos.cpp">
+      <Filter>Common\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Crash\GetWinVer.cpp">
+      <Filter>Common\Crash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Crash\MiniVersion.cpp">
+      <Filter>Common\Crash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\CCmdScript.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\Config.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\CPUIfo.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgBalance.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgIPBox.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\encrypt.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\InputBox.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Log\Log.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Log\logframe.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Security\md5.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\Perf.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\SRecSet\SRecSet.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\strfuncs.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Functions\synchronal.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Comm\Crash\ExceptionHandler.cpp">
+      <Filter>Common\Crash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OrderServ.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Account.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientPortDaemon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgPopMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\FixLenMem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgmt\frmmgmt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frmOrderRoute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frmScript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoPort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\intmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IssueIfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgmt\ItemPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgmt\itemsDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgmt\itemsSRst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\MDVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\MSocket\Msocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderRouteCfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderRouter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderServ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderServDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderServView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrdScript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\PkgBuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\defines\PkgIDDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\CellRange.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\GridCell.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\GridCellBase.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\GridCtrl.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\GridDropTarget.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\InPlaceEdit.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\MemDC.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\gridctrl\TitleTip.h">
+      <Filter>Common\GridCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\ControlPos.h">
+      <Filter>Common\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\CCmdScript.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\Config.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\CPUIfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgBalance.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgIPBox.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\encrypt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\InputBox.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Log\Log.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Log\logframe.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Security\md5.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Define\OrderDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\Perf.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\SRecSet\SRecSet.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\strfuncs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Functions\synchronal.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Define\UDPPkgs.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Comm\Crash\ExceptionHandler.h">
+      <Filter>Common\Crash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OrderServ.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\OrderServDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\OrderServ.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AertTab1.sql">
+      <Filter>sql</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SQLScript\Init.sql">
+      <Filter>sql</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SQLScript\InitDataBase.sql">
+      <Filter>sql</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SQLScript\StoredProc.sql">
+      <Filter>sql</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OrderServ.cfg" />
+  </ItemGroup>
+</Project>

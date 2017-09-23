@@ -1,0 +1,2 @@
+/opt/newcode/mintdev/Comm/build/CMakeFiles/SharedLib.dir
+/opt/newcode/mintdev/Comm/build/CMakeFiles/binary.dir
